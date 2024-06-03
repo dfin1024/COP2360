@@ -1,0 +1,35 @@
+using System;
+
+Module_3_Discussion
+{
+  class Program
+  {
+    // Definition of the Octopus class with additional properties
+    class Octopus
+    {
+      public string Name { get; set; }  // Add a property for the octopus's name
+      public int Tentacles { get; set; } // Change 'legs' to 'Tentacles' for better clarity
+
+      public Octopus(string name, int tentacles)  // Update constructor to accept name and tentacles
+      {
+        Name = name;
+        Tentacles = tentacles;
+      }
+    }
+
+    static void Main(string[] args)
+    {
+      // Creating the first instance of Octopus with a name
+      Octopus octopus1 = new Octopus("Octo", 8);
+
+      // Creating the second instance of Octopus with a different name and tentacle count
+      Octopus octopus2 = new Octopus("Shelly", 6);
+
+      // Display information about each octopus
+      Console.WriteLine($"First octopus: {octopus1.Name} - {octopus1.Tentacles} tentacles");
+      Console.WriteLine($"Second octopus: {octopus2.Name} - {octopus2.Tentacles} tentacles");
+
+      Console.ReadLine();
+    }
+  }
+}
